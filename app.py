@@ -3,7 +3,7 @@ import sqlite3 as sq
 
 
 app = Flask(__name__)
-con = sq.connect('database.db')
+con = sq.connect('database')
 
 @app.route('/')
 def hello_world():
@@ -12,3 +12,4 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run()
+# comment to check
