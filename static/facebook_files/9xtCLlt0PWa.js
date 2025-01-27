@@ -1,0 +1,10 @@
+;/*FB_PKG_DELIM*/
+
+__d("CometDialogLoadingStateContext",["react"],(function(a,b,c,d,e,f,g){"use strict";var h;a=h||d("react");b=a.createContext(!1);g["default"]=b}),98);
+__d("CometRouteReferrerContext",["react"],(function(a,b,c,d,e,f,g){"use strict";var h;a=h||d("react");b=a.createContext();g["default"]=b}),98);
+__d("IntlCLDRNumberType30",["IntlVariations"],(function(a,b,c,d,e,f,g){"use strict";a={getVariation:function(a){if(a%10===1&&a%100!==11)return c("IntlVariations").NUMBER_ONE;else if(a%10>=2&&a%10<=4&&(a%100<12||a%100>14))return c("IntlVariations").NUMBER_FEW;else return c("IntlVariations").NUMBER_MANY}};b=a;g["default"]=b}),98);
+__d("VideoShareDownstreamSignalTrackingTypes",[],(function(a,b,c,d,e,f){"use strict";a="downstream_video_share_data";f.DOWNSTREAM_VIDEO_SHARE_SESSION_STORAGE_KEY=a}),66);
+__d("getTopMostRouteInfo",[],(function(a,b,c,d,e,f){"use strict";function a(a){var b=a.hosted,c=a.main;a=a.pushViewStack;if(a&&a.length>0){a=a[a.length-1];a.depth;a.key;a=babelHelpers.objectWithoutPropertiesLoose(a,["depth","key"]);return a}return b?b:c}f["default"]=a}),66);
+__d("usePartialViewImpression",["useVisibilityObserver"],(function(a,b,c,d,e,f,g){"use strict";function a(a){var b=a.onImpressionEnd;a=a.onImpressionStart;return c("useVisibilityObserver")({onHidden:b,onVisible:a,options:{hiddenWhenCSSStyleHidden:!0,hiddenWhenZeroArea:!0}})}g["default"]=a}),98);
+__d("useRouteReferrer",["CometRouteReferrerContext","react"],(function(a,b,c,d,e,f,g){"use strict";var h,i=(h||d("react")).useContext;function a(){return i(c("CometRouteReferrerContext"))}g["default"]=a}),98);
+__d("useSinglePartialViewImpression",["react","usePartialViewImpression"],(function(a,b,c,d,e,f,g){"use strict";var h;b=h||d("react");var i=b.useCallback,j=b.useRef;function a(a){var b=a.onImpressionEnd,d=a.onImpressionStart,e=j(!1),f=j(!1);a=i(function(a){if(f.current===!0)return;b&&b(a);f.current=!0},[b]);var g=i(function(a){if(e.current===!0)return;d&&d(a);e.current=!0},[d]);return c("usePartialViewImpression")({onImpressionEnd:a,onImpressionStart:g})}g["default"]=a}),98);

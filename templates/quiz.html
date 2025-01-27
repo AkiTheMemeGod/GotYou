@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
+<h2>Phishing Awareness Quiz</h2>
+{% if score is not none %}
+    <p>Your Score: {{ score }}/3</p>
+    <a href="{{ url_for('quiz') }}">Retry</a>
+{% else %}
+    <form method="post">
+        <h3>1. This page looks like Google, but the URL is suspicious. Is it real or fake?</h3>
+        <label><input type="radio" name="q1" value="real"> Real</label>
+        <label><input type="radio" name="q1" value="fake"> Fake</label>
 
-</body>
-</html>
+        <h3>2. This Facebook page is asking for personal information via email. Real or fake?</h3>
+        <label><input type="radio" name="q2" value="real"> Real</label>
+        <label><input type="radio" name="q2" value="fake"> Fake</label>
+
+        <h3>3. The Instagram page has an HTTPS lock and the correct URL. Real or fake?</h3>
+        <label><input type="radio" name="q3" value="real"> Real</label>
+        <label><input type="radio" name="q3" value="fake"> Fake</label>
+
+        <button type="submit">Submit</button>
+    </form>
+{% endif %}
+{% endblock %}

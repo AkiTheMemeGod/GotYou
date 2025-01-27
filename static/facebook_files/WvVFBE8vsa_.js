@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("CAALegacyLoggingUtils",["CAAWebLoggingUtils"],(function(a,b,c,d,e,f,g){"use strict";a={attachAYMHLoginOnClickListener:function(a,b){d("CAAWebLoggingUtils").logAymhEvent({event:"aymh_login_clicked",event_category:"aymh_home_page_interaction",event_flow:"aymh",event_step:"home_page",extra_client_data:{credential_type:a,profile_uid:b,total_count:"1"}},2220391788200892)},attachEventOnClickListener:function(a,b){Event.listen(a,"click",function(a){d("CAAWebLoggingUtils").logLoginEvent({event:b,event_category:"login_home_page_interaction",event_flow:"login_manual",event_step:"home_page"},2220391788200892)})}};b=a;g["default"]=b}),98);

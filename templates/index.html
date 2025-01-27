@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Simulation</title>
 </head>
 <body>
-
+    <h1>Phishing Simulation Tool</h1>
+    <form method="POST" action="/generate">
+        <label for="target">Enter Target Name (e.g., Google, Facebook):</label>
+        <input type="text" id="target" name="target" required>
+        <button type="submit">Generate Link</button>
+    </form>
+    <h2>Generated Links</h2>
+    <ul>
+        {% for target, link in links.items() %}
+            <li><strong>{{ target }}</strong>: <a href="{{ link }}">{{ link }}</a></li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
