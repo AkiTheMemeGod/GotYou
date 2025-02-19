@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59c62518-8af7-493c-834f-18ae9bb574a3" name="Changes" comment="Init to check">
-      <change afterPath="$PROJECT_DIR$/cli.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/facebook_simulate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/google_fake.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/quiz.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/simulate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/instyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/instagram.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/GotYou.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randomized_paths.json" beforeDir="false" afterPath="$PROJECT_DIR$/randomized_paths.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +21,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -71,14 +66,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Flask server.GotYou.executor&quot;: &quot;Run&quot;,
+    &quot;Flask server.GotYou.executor&quot;: &quot;Debug&quot;,
     &quot;Python.app.executor&quot;: &quot;Run&quot;,
     &quot;Python.cli.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/theseus/PROJECTS/GotYou&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/theseus/PROJECTS/attendanceapiCRUD&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -146,6 +141,12 @@
       <workItem from="1737961990900" duration="94000" />
       <workItem from="1737962134561" duration="6000" />
       <workItem from="1737962163054" duration="11000" />
+      <workItem from="1737997955058" duration="601000" />
+      <workItem from="1738301248505" duration="1000" />
+      <workItem from="1738301427125" duration="18000" />
+      <workItem from="1739809610980" duration="1283000" />
+      <workItem from="1739934115925" duration="793000" />
+      <workItem from="1739935041788" duration="110000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -177,6 +178,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GotYou$app.coverage" NAME="app Coverage Results" MODIFIED="1737882691465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GotYou$cli.coverage" NAME="cli Coverage Results" MODIFIED="1737882770986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GotYou$GotYou.coverage" NAME="GotYou Coverage Results" MODIFIED="1737882917663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GotYou$GotYou.coverage" NAME="GotYou Coverage Results" MODIFIED="1739934309836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

