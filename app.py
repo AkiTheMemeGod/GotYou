@@ -14,7 +14,6 @@ def load_randomized_paths():
 
 @app.route('/<random_path>')
 def simulate(random_path):
-    # Reload the paths from the file
     randomized_paths = load_randomized_paths()
     print(randomized_paths)
     target = randomized_paths.get(random_path)
